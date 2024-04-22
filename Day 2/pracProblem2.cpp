@@ -7,14 +7,21 @@ void printExtremes(vector<int> arr)
 {
   int n = arr.size();
 
-  int i = 0;
-  int j = n - 1;
-  while (i <= j)
+  int left = 0;
+  int right = n - 1;
+  while (left <= right)
   {
-    cout << arr[i] << " ";
-    i++;
-    cout << arr[j] << " ";
-    j--;
+    if (left == right) // same hai toh ek print kardo
+    {
+      cout << arr[left] << " ";
+    }
+    else // warna dono print karo
+    {
+      cout << arr[left] << " ";
+      cout << arr[right] << " ";
+    }
+    left++;
+    right--;
   }
   cout << endl;
 }
