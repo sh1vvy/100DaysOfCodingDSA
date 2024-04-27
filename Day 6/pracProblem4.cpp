@@ -9,6 +9,7 @@ using namespace std;
 void rotateArrayByK(vector<int> &arr, int k)
 {
   int n = arr.size();
+  // what
   vector<int> ans(n);
   for (int index = 0; index < n; index++)
   {
